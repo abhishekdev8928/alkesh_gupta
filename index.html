@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/flickity@2.2.2/dist/flickity.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Flickity JS -->
+    <link rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script
+      src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="./index.css">
+    <title>Alkesh Gupta - (Personal Branding)</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <nav class="navbar d-flex">
+        <div class="navbar-left">
+          <a href="#!">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="32"
+              height="32"
+              fill="rgba(255,255,255,1)">
+              <path
+                d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"></path>
+            </svg>
+          </a>
+
+          <a href="#!">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="32"
+              height="32"
+              fill="rgba(255,255,255,1)">
+              <path
+                d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z"></path>
+            </svg>
+          </a>
+
+          <a href="#!">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="32"
+              height="32"
+              fill="rgba(255,255,255,1)">
+              <path
+                d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"></path>
+            </svg>
+          </a>
+        </div>
+
+        <div class="navbar-right d-flex">
+          <button class="btn-connect">Get in touch</button>
+
+          <div class="rounded-hamburger d-flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              fill="currentColor">
+              <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+            </svg>
+          </div>
+        </div>
+      </nav>
+
+      <section class="hero-wrapper d-flex">
+        <div class="hero-frame-container">
+          <img src="./assests/frame19876.png" alt />
+        </div>
+
+        <div class="hero-frame-desc text-center">
+          <p>I’m a passionate designer who lives and</p>
+          <p>breathes strategy, story, and spirit over the past</p>
+          <p>decade, I’ve shaped ventures with real soul.</p>
+        </div>
+      </section>
+
+      <section class="about-wrapper">
+        <div class="about-heading d-flex">
+          <p>
+            I craft <span>soul centric brand</span> that <span>stand</span> the
+            <br />test of time
+          </p>
+        </div>
+
+        <div class="about-profile relative d-flex">
+          <div class="about-profile-frame">
+            <img src="./assests/frame102.png" alt />
+          </div>
+
+          <div class="about-profile-description">
+            
+              <p>I’m Alkesh Gupta — founder & creative director at <span>✣</span>
+           
+              <span>SoulFWD,</span> a studio that shapes, launches, and grows
+           
+            brands with a point of view.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-wrapper">
+
+        <div class="project-headline">
+          Brands shaped
+        </div>
+
+        <div class="project-card">
+          <div class="project-left-card">
+            <div class="abs"></div>
+
+            <div class="project-inner">
+              <img src="./assests/Group 988.png" alt="">
+            </div>
+          </div>
+          <div class="project-right-card d-flex">
+            <h2>Combo Jumbo</h2>
+            <p>From product naming to brand voice and content direction, Combo Jumbo was structured as an emotionally engaging,</p>
+            <button class="btn-connect">
+              Get in touch
+            </button>
+          </div>
+
+        </div>
+
+
+
+      </section>
+
+      <section class="quotes-wrapper d-flex">
+
+        <div class="quotes-outer-container">
+          <div class="quotes-inner-container">
+
+            <h2>Its not about loosing a sale.
+              <span>Its about making a customer</span></h2>
+            <p>- Alkesh</p>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="carousel-wrapper ">
+
+        <div style="justify-content: space-between; padding-bottom: 20px; width:90%; margin:auto" class="carousel-top d-flex">
+
+          <div class="stats-head-content pt-0">
+            <div class="line"></div>
+            <h2>Video Series</h2>
+          </div>
+
+          <button class="btn-connect">Play Reel</button>
+
+        </div>
+
+        <div class="carousel">
+          <div class="carousel-cell d-flex">
+            <div class="image-overlay"></div>
+           <img src="./assests/v2.png" alt="">
+ 
+            
+          </div>
+          <div class="carousel-cell  d-flex">
+             <div class="image-overlay"></div>
+            <img src="./assests/v2.png" alt="">
+            
+          </div>
+          <div class="carousel-cell  d-flex">
+             <div class="image-overlay"></div>
+             <img src="./assests/v2.png" alt="">
+             
+          </div>
+          <div class="carousel-cell">
+             <div class="image-overlay"></div>
+             <img src="./assests/v2.png" alt="">
+          </div>
+          
+        </div>
+
+      </section>
+
+     
+
+     <!-- <section class="gallery-wrapper">
+
+        <div class="gallery-top">
+           <div class="stats-head-content pt-0">
+            <div class="line"></div>
+            <h2>Gallery</h2>
+          </div>
+          <p class="gallery-description">A collection of videos, insights, and micro-narratives that shape the way I <span>think, build, and connect.</span></p>
+        </div>
+
+        <div class="gallery-scroll-wrapper">
+
+          <div class="gallery-image">
+            <div class="gallery">
+              <img src="https://i.pinimg.com/1200x/1b/38/ed/1b38ed0e05f93a90f9aaf765e73755de.jpg" alt="">
+            </div>
+            <div class="gallery">
+              <img src="https://i.pinimg.com/736x/97/dd/38/97dd383361ebfc716497633ffedccba8.jpg" alt="">
+            </div>
+            <div class="gallery">
+              <img src="https://i.pinimg.com/1200x/aa/eb/fe/aaebfea32a329788cf3b4f3d181d81a6.jpg" alt="">
+            </div>
+            <div class="gallery">
+              <img src="https://i.pinimg.com/736x/19/36/6d/19366d6805f865486c533f10cfa8eeff.jpg" alt="">
+            </div>
+             <div class="gallery">
+              <img src="https://i.pinimg.com/736x/e2/04/80/e20480dc41420f3068136d62493ce820.jpg" alt="">
+             </div>
+            <div class="gallery">
+              <img src="https://i.pinimg.com/736x/87/8f/e3/878fe30ba0e947cf6c162d5f091a4a98.jpg" alt="">
+            </div>
+            <div class="gallery">
+              <img src="https://i.pinimg.com/736x/c2/e2/3f/c2e23f5a40fff532691d7a35df6b3ce5.jpg" alt="">
+            </div>
+            <div class="gallery">
+              <img src="https://i.pinimg.com/736x/e3/b5/a6/e3b5a68dc5c923a47c2ed0fb0ffdd5e4.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </section> -->
+
+
+
+      <!-- <section class="stats-wrapper d-flex">
+        <div class="stats-container">
+
+          <div class="px-60">
+            <div class="stats-head-content">
+            <div class="line"></div>
+            <h2>Impact by Numbers</h2>
+          </div>
+          <p class="stats-description">It’s not just about existence. Its about <span>impact and <br> cultivating</span> a legacy that transcends time.</p>
+          </div>
+
+
+          <div class="stats-number">
+
+            <div class="count">
+              <h4>100+</h4>
+              <div>Revenue Unlocked</div>
+            </div>
+
+            <div class="stats-line"></div>
+
+            <div class="count">
+              <h4>30+ </h4>
+              <div>Creators Mentored</div>
+            </div>
+            <div class="stats-line"></div>
+            <div class="count">
+              <h4>100+ </h4>
+              <div>Founders partnered </div>
+            </div>
+            <div class="stats-line"></div>
+            <div class="count">
+              <h4>50+ </h4>
+              <div>Brands launched and scaled</div>
+            </div>
+
+            <div class="stats-line"></div>
+            <div class="count">
+              <h4>10+</h4>
+              <div>Years shaping soul-led brands</div>
+            </div>
+
+            
+
+            
+
+          </div>
+
+        </div>
+      </section> -->
+
+      <!-- <section class="blog-wrapper">
+        <div class="section-headline">My Blog Post</div>
+
+        <div class="swiper mySwiper d-flex">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="blog-card">
+                <img src="./assests/blog1 (1).png" alt="" />
+
+                <div class="blog-card-content">
+                  <h3>A Brand’s Soul Isn’t in Its Logo — It’s in the Why</h3>
+
+                  <small>Alkesh Gupta, 25 July 2025</small>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="blog-card">
+                <img src="./assests/blog1 (1).png" alt="" />
+
+                <div class="blog-card-content">
+                  <h3>A Brand’s Soul Isn’t in Its Logo — It’s in the Why</h3>
+
+                  <small>Alkesh Gupta, 25 July 2025</small>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="blog-card">
+                <img src="./assests/blog2.png" alt="" />
+
+                <div class="blog-card-content">
+                  <h3>
+                    Every Project Is a Story of Resistance, Belief &
+                    Breakthrough
+                  </h3>
+
+                  <small>Alkesh Gupta, 25 July 2025</small>
+                </div>
+              </div>
+            </div>
+             <div class="swiper-slide">
+              <div class="blog-card">
+                <img src="./assests/blog1 (1).png" alt="" />
+
+                <div class="blog-card-content">
+                  <h3>A Brand’s Soul Isn’t in Its Logo — It’s in the Why</h3>
+
+                  <small>Alkesh Gupta, 25 July 2025</small>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="blog-card">
+                <img src="./assests/blog2.png" alt="" />
+
+                <div class="blog-card-content">
+                  <h3>
+                    Every Project Is a Story of Resistance, Belief &
+                    Breakthrough
+                  </h3>
+
+                  <small>Alkesh Gupta, 25 July 2025</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section class="footer-wrapper">
+        <div class="footer-wrapper">
+          <div class="footer-top d-flex">
+            <img src="./assests/shake.png" alt="" />
+            <h4>Think We Vibe?</h4>
+            <button class="btn-connect">Get in touch</button>
+          </div>
+
+          <div class="footer-bottom d-flex">
+            <img src="./assests/logo.png" alt="" />
+
+            <ul class="navigation-link d-flex">
+              <li><a href="">MasterMind</a></li>
+              <li><a href="">about</a></li>
+              <li><a href="">home</a></li>
+              <li><a href="">speaking</a></li>
+              <li><a href="">blog</a></li>
+              <li><a href="">podcast</a></li>
+            </ul>
+
+            <div class="d-flex socials-icon">
+              <a href="">
+                <img src="./assests/svg/SVG.svg" alt="" />
+              </a>
+              <a href="">
+                <img src="./assests/svg/SVG (1).svg" alt="" />
+              </a>
+              <a href="">
+                <img src="./assests/svg/SVG (4).svg" alt="" />
+              </a>
+              <a href="">
+                <img src="./assests/svg/SVG (3).svg" alt="" />
+              </a>
+              <a href="">
+                <img src="./assests/svg/SVG (2).svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>  -->
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        watchSlidesProgress: true,
+        slidesPerView: 3,
+      });
+    </script>
+
+    <script>
+
+      var flkty = new Flickity('.carousel', {
+    initialIndex: 1 
+  });
+
+ 
+      // flickity-prev-next-button previous
+      const prev = document.querySelector(".flickity-prev-next-button.previous");
+      const next = document.querySelector(".flickity-prev-next-button.next");
+
+      prev.innerHTML = `
+      <svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M43.8594 8.27831H1.85938M1.85938 8.27831C4.45538 7.16573 9.5362 4.0505 9.09119 0.490234M1.85938 8.27831C4.45538 9.3909 9.5362 12.5061 9.09119 16.0664" stroke="white" stroke-width="1.2"/>
+  </svg>
+
+`;
+
+next.innerHTML = `
+  <svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.140625 8.27831H42.1406M42.1406 8.27831C39.5446 7.16573 34.4638 4.0505 34.9088 0.490234M42.1406 8.27831C39.5446 9.3909 34.4638 12.5061 34.9088 16.0664" stroke="white" stroke-width="1.2"/>
+  </svg>
+  
+`;
+      
+
+
+      
+    </script>
+
+  </body>
+</html>
