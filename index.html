@@ -231,6 +231,19 @@
             <div class="gallery">
               <img src="https://i.pinimg.com/736x/e3/b5/a6/e3b5a68dc5c923a47c2ed0fb0ffdd5e4.jpg" alt="">
             </div>
+             <div class="gallery">
+              <img src="https://i.pinimg.com/736x/e2/04/80/e20480dc41420f3068136d62493ce820.jpg" alt="">
+             </div>
+            <div class="gallery">
+              <img src="https://i.pinimg.com/736x/87/8f/e3/878fe30ba0e947cf6c162d5f091a4a98.jpg" alt="">
+            </div>
+            <div class="gallery">
+              <img src="https://i.pinimg.com/736x/c2/e2/3f/c2e23f5a40fff532691d7a35df6b3ce5.jpg" alt="">
+            </div>
+            <div class="gallery">
+              <img src="https://i.pinimg.com/736x/e3/b5/a6/e3b5a68dc5c923a47c2ed0fb0ffdd5e4.jpg" alt="">
+            </div>
+            
           </div>
 
         </div>
@@ -305,10 +318,32 @@
         <div class="blog-container">
           <div class="section-headline">My Blog Post</div>
 
-          <div class="carousel"
-  data-flickity='{ "contain": true }'>
+      <div class="carousel-two"
+  data-flickity='{ "contain": true, "pageDots": true, "groupCells": "100%" ,"prevNextButtons": false }'>
   <div class="carousel-cell-two">
      <div class="blog-card">
+                <img src="./assests/blog2.png" alt="" />
+
+                <div class="blog-card-content">
+                  <h3>A Brand’s Soul Isn’t in Its Logo — It’s in the Why</h3>
+
+                  <small>Alkesh Gupta, 25 July 2025</small>
+                </div>
+              </div>
+  </div>
+  <div class="carousel-cell-two">
+       <div class="blog-card">
+                <img src="./assests/blog3.png" alt="" />
+
+                <div class="blog-card-content">
+                  <h3>A Brand’s Soul Isn’t in Its Logo — It’s in the Why</h3>
+
+                  <small>Alkesh Gupta, 25 July 2025</small>
+                </div>
+              </div>
+  </div>
+  <div class="carousel-cell-two">
+       <div class="blog-card">
                 <img src="./assests/blog1 (1).png" alt="" />
 
                 <div class="blog-card-content">
@@ -319,7 +354,7 @@
               </div>
   </div>
   <div class="carousel-cell-two">
-     <div class="blog-card">
+       <div class="blog-card">
                 <img src="./assests/blog1 (1).png" alt="" />
 
                 <div class="blog-card-content">
@@ -329,41 +364,16 @@
                 </div>
               </div>
   </div>
-  <div class="carousel-cell-two">
-     <div class="blog-card">
-                <img src="./assests/blog1 (1).png" alt="" />
 
-                <div class="blog-card-content">
-                  <h3>A Brand’s Soul Isn’t in Its Logo — It’s in the Why</h3>
-
-                  <small>Alkesh Gupta, 25 July 2025</small>
-                </div>
-              </div>
-  </div>
-  <div class="carousel-cell-two">
-     <div class="blog-card">
-                <img src="./assests/blog1 (1).png" alt="" />
-
-                <div class="blog-card-content">
-                  <h3>A Brand’s Soul Isn’t in Its Logo — It’s in the Why</h3>
-
-                  <small>Alkesh Gupta, 25 July 2025</small>
-                </div>
-              </div>
-  </div>
-  <div class="carousel-cell-two">
-     <div class="blog-card">
-                <img src="./assests/blog1 (1).png" alt="" />
-
-                <div class="blog-card-content">
-                  <h3>A Brand’s Soul Isn’t in Its Logo — It’s in the Why</h3>
-
-                  <small>Alkesh Gupta, 25 July 2025</small>
-                </div>
-              </div>
-  </div>
 </div>
 
+
+
+
+
+         
+
+        
 
        
         </div>
@@ -411,8 +421,7 @@
       </section>  
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script> 
 
     <!-- Initialize Swiper -->
     <script>
@@ -423,8 +432,9 @@
     </script>
 
     <script>
+      const lenis = new Lenis();
 
-      var flkty = new Flickity('.carousel', {
+      const flkty = new Flickity('.carousel', {
     initialIndex: 1 
   });
 
@@ -451,6 +461,8 @@ next.innerHTML = `
 
       
     </script>
+
+    
 
   </body>
 </html>
