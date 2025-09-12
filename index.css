@@ -1191,7 +1191,9 @@ background-color: rgba(20, 19, 19, 0.365); /* 30% opacity */
 .project-content{
   align-items: center;
 }
-
+.stats-container{
+  width:100%;
+}
 }
 
 
