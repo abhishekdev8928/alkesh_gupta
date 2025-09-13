@@ -55,7 +55,7 @@
 .rounded-circle{
     width:150%;
     height:750%;
-    background-color: var(--color-dark;
+    background-color: var(--color-dark);
     border-radius: 50%;
     position: absolute;
     left:50%;
