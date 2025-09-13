@@ -485,32 +485,44 @@
     </div>
 
    
-    
+    <script src="https://unpkg.com/imagesloaded@4.1.4/imagesloaded.pkgd.min.js"></script>
     <script>
-    
-     window.addEventListener('DOMContentLoaded', (event) => {
+
+      
+    window.addEventListener('DOMContentLoaded', (event) => {
     // Get all carousels (you can use any specific class for your carousels)
-    const carousels = document.querySelectorAll('.carousel, .carousel-two, .carousel-three');
+    const carousels = document.querySelectorAll('.carousel, .carousel-two, .my-unique-carousel');
     
-    // Loop through each carousel and initialize Flickity
+    // Log the carousels NodeList
+    console.log(carousels);  // Use this to check if you're selecting the carousels correctly
+    
+    // Loop through each carousel
     carousels.forEach(carousel => {
-        const flkty = new Flickity(carousel, {
-            initialIndex: 1,
+        // Use imagesLoaded to wait until all images in the carousel are loaded
+        imagesLoaded(carousel, function() {
+            // Initialize Flickity only after images are loaded
+            const flkty = new Flickity(carousel, {
+                initialIndex: 1,
+            });
+
+            // Update prev/next buttons after initializing for each carousel
+            const prev = carousel.querySelector(".flickity-prev-next-button.previous");
+            const next = carousel.querySelector(".flickity-prev-next-button.next");
+
+            // Check if prev/next buttons are found
+            if (prev && next) {
+                prev.innerHTML = `<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M43.8594 8.27831H1.85938M1.85938 8.27831C4.45538 7.16573 9.5362 4.0505 9.09119 0.490234M1.85938 8.27831C4.45538 9.3909 9.5362 12.5061 9.09119 16.0664" stroke="white" stroke-width="1.2"/>
+                                  </svg>`;
+
+                next.innerHTML = `<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.140625 8.27831H42.1406M42.1406 8.27831C39.5446 7.16573 34.4638 4.0505 34.9088 0.490234M42.1406 8.27831C39.5446 9.3909 34.4638 12.5061 34.9088 16.0664" stroke="white" stroke-width="1.2"/>
+                                  </svg>`;
+            }
         });
-
-        // Update prev/next buttons after initializing for each carousel
-        const prev = carousel.querySelector(".flickity-prev-next-button.previous");
-        const next = carousel.querySelector(".flickity-prev-next-button.next");
-
-        prev.innerHTML = `<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M43.8594 8.27831H1.85938M1.85938 8.27831C4.45538 7.16573 9.5362 4.0505 9.09119 0.490234M1.85938 8.27831C4.45538 9.3909 9.5362 12.5061 9.09119 16.0664" stroke="white" stroke-width="1.2"/>
-                          </svg>`;
-
-        next.innerHTML = `<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.140625 8.27831H42.1406M42.1406 8.27831C39.5446 7.16573 34.4638 4.0505 34.9088 0.490234M42.1406 8.27831C39.5446 9.3909 34.4638 12.5061 34.9088 16.0664" stroke="white" stroke-width="1.2"/>
-                          </svg>`;
     });
 });
+
 
 
       document.addEventListener("DOMContentLoaded", function () {
