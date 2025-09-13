@@ -9,36 +9,9 @@
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    
     <link rel="stylesheet" href="./index.css" />
-    <style>
-      .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #444;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-      
-     
-    </style>
+  
     <title>Alkesh Gupta - (Personal Branding)</title>
   </head>
 
@@ -231,7 +204,7 @@
           </div>
         </div>
       </section>
-
+      
       <section class="carousel-wrapper px-24">
         <div class="carousel-top d-flex">
           <div class="stats-head-content pt-0">
@@ -511,51 +484,27 @@
       </section>
     </div>
 
-    <!-- <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script> -->
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-     var swiper = new Swiper(".mySwiper", {
-  direction: "vertical",
-  slidesPerView: 1,
-  spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-    </script>
-
+   
+    
     <script>
     
-
-      const flkty = new Flickity(".carousel", {
+      window.addEventListener('DOMContentLoaded', (event) => {
+    const flkty = new Flickity(".carousel", {
         initialIndex: 1,
-      });
+    });
 
-      // flickity-prev-next-button previous
-      const prev = document.querySelector(
-        ".flickity-prev-next-button.previous"
-      );
-      const next = document.querySelector(".flickity-prev-next-button.next");
+    // Update prev/next buttons after initializing
+    const prev = document.querySelector(".flickity-prev-next-button.previous");
+    const next = document.querySelector(".flickity-prev-next-button.next");
 
-      prev.innerHTML = `
-      <svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M43.8594 8.27831H1.85938M1.85938 8.27831C4.45538 7.16573 9.5362 4.0505 9.09119 0.490234M1.85938 8.27831C4.45538 9.3909 9.5362 12.5061 9.09119 16.0664" stroke="white" stroke-width="1.2"/>
-  </svg>
+    prev.innerHTML = `<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M43.8594 8.27831H1.85938M1.85938 8.27831C4.45538 7.16573 9.5362 4.0505 9.09119 0.490234M1.85938 8.27831C4.45538 9.3909 9.5362 12.5061 9.09119 16.0664" stroke="white" stroke-width="1.2"/>
+                      </svg>`;
+    next.innerHTML = `<svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.140625 8.27831H42.1406M42.1406 8.27831C39.5446 7.16573 34.4638 4.0505 34.9088 0.490234M42.1406 8.27831C39.5446 9.3909 34.4638 12.5061 34.9088 16.0664" stroke="white" stroke-width="1.2"/>
+                      </svg>`;
+});
 
-`;
-
-      next.innerHTML = `
-  <svg width="44" height="17" viewBox="0 0 44 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0.140625 8.27831H42.1406M42.1406 8.27831C39.5446 7.16573 34.4638 4.0505 34.9088 0.490234M42.1406 8.27831C39.5446 9.3909 34.4638 12.5061 34.9088 16.0664" stroke="white" stroke-width="1.2"/>
-  </svg>
-  
-`;
       document.addEventListener("DOMContentLoaded", function () {
         const container = document.querySelector(".marquee-inner");
         const wrapper = document.querySelector(".marquee-wrapper");
