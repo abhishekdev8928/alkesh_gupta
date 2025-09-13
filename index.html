@@ -503,8 +503,11 @@
             // Initialize Flickity only after images are loaded
             const flkty = new Flickity(carousel, {
                 initialIndex: 1,
-              resize: true,
+                resize: true, // Ensure resizing is enabled
             });
+
+            // Force Flickity to recalculate the layout (reflow) after initialization
+            flkty.resize();
 
             // Update prev/next buttons after initializing for each carousel
             const prev = carousel.querySelector(".flickity-prev-next-button.previous");
@@ -523,6 +526,18 @@
         });
     });
 });
+
+// Listen for window resize event to force Flickity to recalculate its size
+window.addEventListener('resize', function () {
+    const carousels = document.querySelectorAll('.carousel, .carousel-two, .my-unique-carousel');
+    carousels.forEach(carousel => {
+        const flkty = Flickity.data(carousel); // Get the Flickity instance
+        if (flkty) {
+            flkty.resize(); // Force Flickity to resize/reflow
+        }
+    });
+});
+
 
 
 
