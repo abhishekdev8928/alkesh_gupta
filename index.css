@@ -5,7 +5,64 @@
   font-family: 'Helma_Font';
   src: url(./assests/Helma.otf) format('opentype');
 }
+@font-face {
+    font-family: PPfont;
+    src: url(https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d348316e_PP%20Neue%20Machina%20Inktrap%20Medium.woff);
+}
 
+
+.loader{
+    width:100%;
+    height:100%;
+    background-color: rgb(11,11,11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+    
+
+    h3{
+        color:#fff;
+        position: absolute;
+        font-family: PPfont;
+        font-size: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:16px;
+        opacity: 0;
+
+        .dot{
+        width:20px;
+        height:20px;
+        background-color: white;
+        border-radius: 50%;
+    }
+    }
+}
+
+.rounded-circle-wrapper{
+    width:100%;
+    height:100px;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.rounded-circle{
+    width:150%;
+    height:750%;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+
+
+}
 body{
   background-color: var(--color-dark);
 }
