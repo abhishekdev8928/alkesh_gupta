@@ -1014,7 +1014,7 @@ background-color: rgba(20, 19, 19, 0.365); /* 30% opacity */
 .quotes-wrapper{
   background-color: var(--color-dark);
   width:100%;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .project-right-card > p{
   font-size: 22px;
@@ -1057,7 +1057,7 @@ background-color: rgba(20, 19, 19, 0.365); /* 30% opacity */
 }
 
 .carousel{
-  width:90%;
+  width:100%;
 }
 .about-profile-description{
   bottom: -26%;
@@ -1095,7 +1095,7 @@ background-color: rgba(20, 19, 19, 0.365); /* 30% opacity */
 .gallery-top{
   flex-direction: column;
   align-items: flex-start;
-  gap:32px;
+  gap:24px;
   width:90%;
   padding:0;
   margin:auto;
@@ -1131,7 +1131,7 @@ background-color: rgba(20, 19, 19, 0.365); /* 30% opacity */
       width:100%;
     }
     .stats-description{
-      padding-top: 16px;
+      padding-top: 24px;
     }
     .count >div{
       font-size: 20px;
@@ -1194,7 +1194,21 @@ background-color: rgba(20, 19, 19, 0.365); /* 30% opacity */
 .stats-container{
   width:100%;
 }
+.stats-line{
+  display: none;
 }
+.count > h4{
+  font-size: 60px;
+}
+
+.stats-head-content > .line {
+  height: 34px;
+}
+}
+
+
+
+
 
 
 
