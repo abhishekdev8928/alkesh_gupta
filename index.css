@@ -914,7 +914,7 @@ background-color: rgba(20, 19, 19, 0.365); /* 30% opacity */
 }
 
 .flickity-button:hover{
-  
+  background-color: #040405;
 }
 
 
@@ -939,6 +939,12 @@ background-color: rgba(20, 19, 19, 0.365); /* 30% opacity */
 }
 .quotes-inner-container{
   padding: 80px 50px;
+}
+
+.flickity-button{
+  width:60px;
+  height:60px;
+
 }
 }
 
