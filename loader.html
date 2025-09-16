@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        html,body{
+            width:100%;
+            height:100%;
+        }
+
+        @font-face {
+    font-family: PPfont;
+    src: url(https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d348316e_PP%20Neue%20Machina%20Inktrap%20Medium.woff);
+}
+
+
+.loader{
+    width:100%;
+    height:100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+    
+
+    h3{
+        color:#fff;
+        position: absolute;
+        font-family: PPfont;
+        font-size: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:16px;
+        opacity: 0;
+
+        .dot{
+        width:20px;
+        height:20px;
+        background-color: white;
+        border-radius: 50%;
+    }
+    }
+}
+
+.rounded-circle-wrapper{
+    width:100%;
+    height:100px;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.rounded-circle{
+    width:150%;
+    height:750%;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+
+
+}
+    </style>
+  </head>
+  <body>
+    <div class="loader">
+      <h3>
+        <div class="dot"></div>
+        Namaste
+      </h3>
+      <h3>
+        <div class="dot"></div>
+        Hello
+      </h3>
+      <h3>
+        <div class="dot"></div>
+        Hola
+      </h3>
+    </div>
+
+    <div class="rounded-circle-wrapper">
+      <div class="rounded-circle"></div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"
+      integrity="sha512-wOeEC+9qERAzhliwBFPDb6t8TiFFxdxG8vhK/Ygs7TuC44bpg8pg/X2/U/u+0X4fK05wb9id1EIipnF02+CFQw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      const h3Elements = document.querySelectorAll("h3");
+      const tl = gsap.timeline();
+
+      h3Elements.forEach((el) => {
+        tl.to(el, { opacity: 1, duration: 0.4 }).to(
+          el,
+          { opacity: 0, duration: 0.4 },
+          "+=0.1"
+        );
+      });
+      tl.to(".rounded-circle-wrapper", {
+        marginTop: -100,
+      });
+
+      tl.to(".loader", {
+        height: 0,
+      });
+    </script>
+  </body>
+</html>

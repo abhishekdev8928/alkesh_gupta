@@ -5,64 +5,7 @@
   font-family: 'Helma_Font';
   src: url(./assests/Helma.otf) format('opentype');
 }
-@font-face {
-    font-family: PPfont;
-    src: url(https://cdn.prod.website-files.com/659dbdfd5a080be8d3483164/659dbdfd5a080be8d348316e_PP%20Neue%20Machina%20Inktrap%20Medium.woff);
-}
 
-
-.loader{
-    width:100%;
-    height:100%;
-    background-color: var(--color-dark);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-
-    
-
-    h3{
-        color:#fff;
-        position: absolute;
-        font-family: PPfont;
-        font-size: 8rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap:16px;
-        opacity: 0;
-
-        .dot{
-        width:20px;
-        height:20px;
-        background-color: white;
-        border-radius: 50%;
-    }
-    }
-}
-
-.rounded-circle-wrapper{
-    width:100%;
-    height:100px;
-    background-color: transparent;
-    position: relative;
-    overflow: hidden;
-    margin-top: 0px;
-}
-
-.rounded-circle{
-    width:150%;
-    height:750%;
-    background-color: var(--color-dark);
-    border-radius: 50%;
-    position: absolute;
-    left:50%;
-    transform: translateX(-50%);
-
-
-}
 body{
   background-color: var(--color-dark);
 }
@@ -89,9 +32,9 @@ body{
   --line-height-base: 1; /* instead of --theme-line-height-normal */
 }
 .main{
-  /* max-width: 1600px; */
+  max-width: 1600px;
   position: relative;
-  /* background-color: var(--color-dark); */
+  background-color: var(--color-dark);
 }
 * {
   margin: 0;
@@ -786,7 +729,13 @@ padding-bottom: 21px;
   font-size: 2em;
   color: white;
 }
-
+.dot{
+   transition: box-shadow 0.3s ease;
+}
+.dot.is-selected{
+ background-color: #00bfa6c1; /* Softer teal (not overly neon) */
+  box-shadow: 0 0 6px 3px rgba(0, 191, 166, 0.5); /* Soft balanced glow */
+}
 
 @media (max-width:1200px) {
 
@@ -983,7 +932,13 @@ background-color: rgba(20, 19, 19, 0.365); /* 30% opacity */
   width:100% !important;
 }
 .quotes-inner-container > h2{
- font-size: 40px;
+ font-size: 3rem;
+}
+.quotes-inner-container > p{
+  font-size: 5rem;
+}
+.quotes-inner-container{
+  padding: 80px 50px;
 }
 }
 
